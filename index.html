@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Kursy walut</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
 				integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -9,11 +10,13 @@
 	<body>
 		<div class="container">
 			<div class="leftColumn" id="leftColumn">
+				<div><h4>Wartość złotówki</h4></div>
 				<div class="rateListLabel"></div>
 			</div>
-			<div class="rightColumn">
+			<div class="rightColumn" id="currencyDetailsColumn">
 				<div class="currencyDetails">
-					<div class="chooseCurrencyToCheckDetailsInfo">Wybierz walutę, aby przejrzeć szczegóły</div>
+					<div id="chooseCurrencyToCheckDetailsInfo"><h1>Wybierz walutę, aby przejrzeć szczegóły</h1></div>
+					<div class="detailsList"></div>
 				</div>
 			</div>
 		</div>
