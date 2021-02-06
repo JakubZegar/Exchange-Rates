@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.leftColumn{
+    display: flex;
+    flex-direction: row;
+    flex:4;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.rightColumn{
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    background-color: yellow;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rateListLabel{
+    display: grid;
+}
+
+.rateListValue{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.labelItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    padding: 8px 12px 8px 12px;
+    margin: 3px 0px 3px 0px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    transition-timing-function: ease-in-out;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.labelItem:hover{
+
+    transform: scale(1.2);
+    background-color: red;
+}
+
+.labelName{
+    display: flex;
+    margin-right: 6px;
+}
+
+.labelValue{
+    display: flex;
+    margin-left: 6px;
+}
+
+.currencyDetails {
+    display: flex;
+    flex:1;
+    position: fixed;
+    margin: 5vh 0 5vh 0;
+    height: 90vh;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chooseCurrencyToCheckDetailsInfo{
+    display: flex;
+    text-align: center;
+}
