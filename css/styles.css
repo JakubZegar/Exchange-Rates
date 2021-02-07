@@ -1,0 +1,117 @@
+body {
+    background-image: linear-gradient(to bottom, #8DCBF2, #B6E1F2);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+.leftColumn{
+    background-color: #C9DFF2;
+    box-shadow: 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+    margin: 5vh 16px 5vh 16px;
+    padding-top: 5vh;
+    padding-bottom: 16px;
+    align-items: center;
+}
+
+.rightColumn{
+    display: flex;
+    flex:2
+}
+
+.labelItem {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    color: black;
+    padding: 8px 12px 8px 12px;
+    margin: 3px 0px 3px 0px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s, border-radius 0.2s, color 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.labelItem:hover{
+    box-shadow: 0 0 0.5em black;
+    transform: scale(1.2);
+    background-color: #0477BF;
+    color: white;
+}
+
+.labelName .labelValue{
+    display: flex;
+    margin-right: 6px;
+}
+
+.currencyDetails {
+    background-color: #C9DFF2;
+    box-shadow: 0 0 1em;
+    display: flex;
+    flex:1;
+    margin: 5vh 16px 5vh 16px;
+    padding: 24px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chooseCurrencyToCheckDetailsInfo{
+
+    display: flex;
+    font-weight: bold;
+    font-size: 24;
+    text-align: center;
+}
+
+.detailsList{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 22;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .detailsList {
+        font-size: 18;
+    }
+  }
+
+.detailHeader{
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detailItem{
+    border-top: 1px solid black;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detailDate .detailValue{
+    margin-right: 24px;
+}
+
+h1, h4, h5 {
+    text-align: center;
+    font-weight: bold;
+}

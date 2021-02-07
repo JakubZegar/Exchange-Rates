@@ -1,7 +1,26 @@
 <html>
 	<head>
-	</headd>
+		<meta charset="UTF-8">
+		<title>Kursy walut</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+				integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
 	
 	<body>
+		<div class="container">
+			<div class="leftColumn" id="leftColumn">
+				<div><h4>Wartość złotówki</h4></div>
+				<div class="rateListLabel"></div>
+			</div>
+			<div class="rightColumn" id="currencyDetailsColumn">
+				<div class="currencyDetails">
+					<div id="chooseCurrencyToCheckDetailsInfo"><h1>Wybierz walutę, aby przejrzeć szczegóły</h1></div>
+					<div class="detailsList"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/rates.js"></script>
 	</body>
 </html>
