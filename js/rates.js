@@ -25,14 +25,12 @@ window.onload = function(e){
 }
 
 function loadRates(rates) {
-    var index = 0;
     for (var element in rates) {
         if (Object.prototype.hasOwnProperty.call(rates, element)) {
-            rateListElementInner += `<div class="labelItem" id=` + index + ` onclick="getDetails('`+ element +`')">
+            rateListElementInner += `<div class="labelItem" onclick="getDetails('`+ element +`')">
                                         <div class=labelName>`+ element +`</div>
                                         <div class=labelValue>` + rates[element] + `</div>
                                      </div>`
-            index += 1;
         }
     }
     rateListElement.innerHTML = rateListElementInner;

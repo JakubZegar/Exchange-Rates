@@ -63,7 +63,7 @@ body {
     flex:1;
     margin: 5vh 16px 5vh 16px;
     padding: 24px;
-    max-height: 90vh;
+    height: 600px;
     align-items: center;
     justify-content: center;
 }
